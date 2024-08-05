@@ -1,0 +1,213 @@
+body {
+  background-color: black;
+}
+
+/*Navbar*/
+.nav-link:hover {
+  color: green !important;
+}
+
+.navbar-brand {
+  width: 200px; /* Adjust width to fit your content */
+  height: 80px; /* Adjust height to fit your content */
+}
+
+.logo {
+  top: 0;
+  left: 40%;
+  transform: translateX(40%);
+  transition: opacity 0.3s ease;
+}
+
+.company-title {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+.navbar-brand:hover .logo {
+  opacity: 0;
+}
+
+.navbar-brand:hover .company-title {
+  display: inline;
+  opacity: 1;
+}
+
+
+
+
+
+
+/*HERO SECTION*/
+.carousel-item {
+  height: 70vh; /* Adjust this value as needed */
+}
+
+.carousel-item img {
+  object-fit: cover; /* Ensures the image covers the entire area */
+  height: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(128, 124, 124); /* Change text color to white */
+}
+
+
+.carousel-caption h1 {
+  font-size: 2.5rem; /* Default size */
+  font-weight: 600;
+}
+
+/* Responsive font sizes */
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 1.75rem; /* Smaller font size for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-caption h1 {
+    font-size: 1.5rem; /* Smaller font size for mobile phones */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Who Are We*/
+.who-are-we {
+  background-color: #f8f9fa; /* Light background */
+}
+
+@media (max-width: 576px) {
+  .who-are-we h1 {
+    font-size: 2rem;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Services*/
+.services {
+  background-color: #343a40; /* Dark background */
+}
+
+.service-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.75);
+}
+
+.service-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Contact Us*/
+.contact-us-section {
+  color: #f8f9fa; /* Light text color */
+}
+
+.contact-us-section .form-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.75);
+}
+
+.contact-us-section .btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.contact-us-section .btn-success:hover {
+  background-color: #218838;
+}
+
+.fade-right {
+  position: relative;
+  overflow: hidden;
+}
+
+.fade-right::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%; /* Adjust this value to control the gradient start point */
+  background: linear-gradient(to right, transparent, #222529);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+.footer {
+  background-color: #000; /* Black background */
+}
+
+.footer-logo {
+  height: 60px; /* Adjust as needed */
+}
+
+.footer i {
+  font-size: 24px;
+}
+
+.footer p {
+  margin-top: 20px;
+}
