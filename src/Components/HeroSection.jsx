@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <>
       <div id="heroCarousel" className="carousel slide" data-bs-ride="carousel">
-      <div className="carousel-inner">
+      <div className="carousel-inner" id="home">
         <div className="carousel-item active">
           <img src={image1} className="d-block w-100" alt="Slide 1" />
           <div className="carousel-caption d-none d-md-block">

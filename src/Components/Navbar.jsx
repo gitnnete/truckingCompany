@@ -26,7 +26,7 @@ const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div className="container">
-          <a className="navbar-brand position-relative" href="/" data-aos="fade-right">
+          <a className="navbar-brand position-relative" href="#home" data-aos="fade-right">
             <img
               src={logo}
               alt="Logo"
@@ -53,7 +53,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <a
                   className="nav-link fs-5 mx-3"
-                  href="/"
+                  href="#home"
                   onClick={handleNavLinkClick}
                 >
                   Home
